@@ -66,7 +66,7 @@ function toggleValue(v){
 
 function newScorecard(){
   let scorecard = createScorecard();
-  let background = appVersion === 'nsfw' ? getRandomInt(1,23) : getRandomInt(101,103);
+  let background = appVersion === 'nsfw' ? getRandomInt(1,64) : getRandomInt(101,103);
 
   localStorage.setItem('background', JSON.stringify(background));
   $('head').append('<style>#personal-grid__grid:before{background-image: url("/images/backgrounds/background-' + background + '.jpg");}</style>');
